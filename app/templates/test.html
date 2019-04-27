@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<!--<div class="row">-->
+
+<div class="col-sm-3" id="exbut">
+    <button class="btn btn-primary btn-block">New Post</button>
+</div>
+
+{% for i in range(5) %}
+<div class="container col-sm-7" id="econtainer">
+    <div id="exlabel">
+        <img id="exprofpic" src="https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png"/>
+        <p id="exname">Username</p>
+    </div>
+    <div id="expic">
+        <img src="https://www.studentuniverse.com/blog/wp-content/uploads/2018/02/japan-featured-image.jpg"/>
+    </div>
+     <div id="exbody">
+        This is just a test of the description for the pictures to be posted on the timeline otherwise known as the explore page
+    </div>
+    <div id="exld">
+        <div id="exlike"><img id="exheart" src="http://clipart-library.com/images/BigKKq44T.jpg"> 0 Likes</div>
+        <div id="exdate">24 April 2018</div>
+    </div>
+</div>
+{% endfor %}
+
+     
+<!--</div>-->
+{% endblock %}
