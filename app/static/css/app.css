@@ -3,15 +3,6 @@ body{
     background-color: #f5efe6;
 }
 
-form {
-    padding: 15px;
-    max-width: 530px;
-    border-radius: 0.3em;
-    background-color: white;
-    box-shadow: 0 0 0.5em gray;
-    margin-bottom: 50px;
-}
-
 .container{
     margin: 0 auto;
 }
@@ -22,9 +13,10 @@ button{
     
 }
 
+/*Home Page*/
 #logo{
-    width: 2rem;
-    height: 2rem
+    width: 115px;
+    height: 35px;
 }
 
 #photobut{
@@ -35,10 +27,6 @@ button{
     display: table; 
     border: solid 1px #b8bec6; 
     border-radius: 5px;
-}
-
-form > div{
-    font-weight: bold;
 }
 
 #hcontainer{
@@ -52,7 +40,7 @@ form > div{
     border-bottom-style: solid;
     border-bottom-color: grey;
     border-bottom-width: 1px;
-    margin-bottom: 2rem;
+    margin-top: 2px;
 }
 
 #htext{
@@ -69,6 +57,45 @@ form > div{
     margin-bottom: 4rem;
 }
 
+.logo{
+    width:175px;
+    height:50px;
+    margin-bottom: 5px;
+}
+
+/*Registration, Login & New Post Forms*/
+form {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #c6c6c6;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08);
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    height: auto;
+    width: 400px;
+    background:white;
+    border-radius: 5px;
+}
+
+form > div{
+    font-weight: bold;
+}
+
+#heading{
+    padding-top: 80px;
+    padding-bottom: 15px;
+    margin: auto;
+    width: 37%;
+    font: cursive;
+}
+
+#loginbtn{
+    margin-top: 10px;
+}
+
+/*Explore Page*/
 #econtainer{
     box-shadow: 0 0 0.5em gray;
     margin-bottom: 50px;
@@ -138,4 +165,43 @@ form > div{
 #exheart{
     height: 2rem;
     width: 2rem;
+}
+
+/*Profile Page*/
+.profile{
+    display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: repeat(3, 250px);
+	grid-auto-rows: 100px;
+	grid-gap: 10px;
+}
+
+.col{
+	width: 200px;
+	height: 200px;
+}
+
+#pcontainer{
+    box-shadow: 0 0 0.5em gray;
+    margin-bottom: 50px;
+    border-radius: 0.3em;
+    background-color: white;
+    padding: 2rem;
+    width:60rem;
+    right: 10rem;
+}
+
+#pcontainer>div{
+    display: inline-block;
+}
+
+#pprofpic{
+    height: 8rem;
+    width: 8rem;
+    margin-right: 3rem;
+}
+
+#pstats{
+    display: relative;
+    float: right;
 }

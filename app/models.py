@@ -1,3 +1,4 @@
+import datetime
 from . import db
 from werkzeug.security import generate_password_hash
 
@@ -21,12 +22,12 @@ class Users(db.Model):
         self.firstname = firstname
         self.lastname = lastname
         self.username = username
-        self.password = generate_password_hash(password, method='pbkdf2:sha256')
+        self.password = password
         self.email = email
         self.location = location
         self.biography = biography
         self.profile_photo = profile_photo
-        self.joined_on = joined_on
+        self.joined_on = datetime.datetime.now()
     
     def is_authenticated(self):
         return True
@@ -62,7 +63,7 @@ class Posts(db.Model):
         self.user_id = user_id
         self.photo = photo
         self.caption = caption
-        self.created_on = created_on
+        self.created_on = datetime.datetime.now()
 
 
 #Likes Table in DB
